@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles.css">
+  <title>Lazare Boddaert</title>
+  <meta name="description" content="Lazare Boddaert, développeur web freelance, fullstack et wordpress basé à Dijon (Bourgogne), France">
+</head>
+<body class="hide-scrollbar">
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+  <header id="header">
+    <nav id="navbar" class="my-navbar">
+      <img loading="eager" src="assets/images/logo_LB_white.webp" onclick="lenis.scrollTo('body')" id="navbar-logo" alt="Logo Lazare Boddaert, développeur web">
+      <ul id="navbar-list-desktop">
+        <li><a class="links-menu link-to-presentation" rel="noopener" href="#section-presentation" onclick="lenis.scrollTo('#section-presentation', { offset: -52})">Qui suis-je ?</a></li>
+        <span>|</span>
+        <li><a class="links-menu link-to-projets" rel="noopener" href="#section-projets" onclick="lenis.scrollTo('#section-projets', { offset: -52})">Mes projets</a></li>
+        <span>|</span>
+        <li><a class="links-menu link-to-contact" rel="noopener" href="#section-contact" onclick="lenis.scrollTo('#section-contact', { offset: -52})">Me contacter</a></li>
+      </ul>
+      <div id="dropdown-mobile-container">
+        <button type="button" id="dropdown-menu-btn" class="link-menu"><img id="navbar-menu-icon" src="assets/images/menu-icon.svg" alt="menu icon"></button>
+        <ul class="menu" id="navbar-list-mobile">
+            <li id="anchor-mobile-presentation"><a href="#section-presentation" onclick="lenis.scrollTo('#section-presentation', { offset: -52})" class="link-menu links-menu link-to-presentation">Qui suis-je ?</a></li>
+            <li id="anchor-mobile-projets"><a href="#section-projets" onclick="lenis.scrollTo('#section-projets', { offset: -52})" class="link-menu links-menu link-to-projets">Mes projets</a></li>
+            <li id="anchor-mobile-contact"><a href="#section-contact" onclick="lenis.scrollTo('#section-contact', { offset: -52})" class="link-menu links-menu link-to-contact">Me contacter</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section id="section-hero-banner">
+    <div id="hero-banner-container">
+      <h1 id="main-title">Bienvenue sur mon Portfolio !</h1>
+      <div id="photo-container">
+        <img
+          id="photo-presentation"
+          loading="eager"
+          src="assets/images/Portrait_by_Benoit_Billard-120_round_300x300.webp"
+          srcSet="assets/images/Portrait_by_Benoit_Billard-120_round_150x150.webp 700w, assets/images/Portrait_by_Benoit_Billard-120_round_300x300.webp 1400w"
+          size="700w"
+          alt="Lazare Boddaert, photographie par Benoit Billard"
+        >
+      </div>
+      <h1 class="dynamic-text-wrapper">
+        <span class="static-text">Je&nbsp;suis&nbsp;</span>
+        <ul class="dynamic-text">
+          <li class="dynamic-li"><span>Lazare Boddaert...</span></li>
+          <li class="dynamic-li"><span>développeur Fullstack...</span></li>
+          <li class="dynamic-li"><span>passionné par le web...</span></li>
+        </ul>
+      </h1>
+    </div>
+  </section>
+  <section class="sections" data-bg-image="linear-gradient(95.2deg, rgba(173,252,234,0) 26.8%, rgba(192,229,246,0) 64%)" data-fg-image="linear-gradient(95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64%)" style="background-color: rgba(186, 236, 242, .4)" id="section-presentation">
+    <div id="container-presentation">
+      <div id="text-presentation">
+        <h2 class="reveal-type">A propos de moi</h2>
+        <p>Développeur web basé à Dijon, j'ai découvert la programmation lors d'un bootcamp organisé par le Wagon (Paris). A la suite de cette première exéprience, j'ai continué mon apprentissage du code en réalisant différents projets afin de devenir développeur full-stack. Je peux ajourd'hui réaliser un site ou une application web complète et performante, référencement compris, configurer et maintenir un serveur web, et m'occuper de l'hébergement de votre site.</p>
+      </div>
+    </div>
+    <br />
+    <div id="skills-container">
+      <h2 class="reveal-type">Compétences techniques</h2>
+      <small id="skill-click-instruction">Cliquez sur une catégorie pour faire apparaitre les compétences correspondantes</small>
+      <div id="skills-divs">
+        <div class="skills-div">
+          <div class="skills-title-div">
+            <h3>Backend</h3>
+          </div>
+          <ul style="display: none">
+            <li>
+              <h5>NodeJs (Express)</h5>
+              <span class="bar"><span class="nodejs"></span>
+            </li>
+            <li>
+              <h5>MySQL</h5>
+              <span class="bar"><span class="mysql"></span>
+            </li>
+            <li>
+              <h5>Ruby (Rails)</h5>
+              <span class="bar"><span class="ruby"></span>
+            </li>
+            <li>
+              <h5>Nginx</h5>
+              <span class="bar"><span class="nginx"></span>
+            </li>
+            <li>
+              <h5>MongoDb</h5>
+              <span class="bar"><span class="mongodb"></span>
+            </li>
+          </ul>
+        </div>
+        <br />
+        <div class="skills-div">
+          <div class="skills-title-div">
+            <h3>Frontend</h3>
+          </div>
+          <ul style="display: none">
+            <li>
+              <h5>HTML</h5>
+              <span class="bar"><span class="html"></span>
+            </li>
+            <li>
+              <h5>Javascript</h5>
+              <span class="bar"><span class="javascript"></span>
+            </li>
+            <li>
+              <h5>ReactJs</h5>
+              <span class="bar"><span class="react"></span>
+            </li>
+            <li>
+              <h5>CSS</h5>
+              <span class="bar"><span class="css"></span>
+            </li>
+            <li>
+              <h5>Bootstrap</h5>
+              <span class="bar"><span class="bootstrap"></span>
+            </li>
+            <li>
+              <h5>Redux</h5>
+              <span class="bar"><span class="redux"></span>
+            </li>
+          </ul>
+        </div>
+        <br />
+        <div class="skills-div">
+          <div class="skills-title-div">
+            <h3>Autres</h3>
+          </div>
+          <ul style="display: none">
+            <li>
+              <h5>Référencement (SEO)</h5>
+              <span class="bar"><span class="seo"></span>
+            </li>
+            <li>
+              <h5>Wordpress</h5>
+              <span class="bar"><span class="wordpress"></span>
+            </li>
+            <li>
+              <h5>Git / Github</h5>
+              <span class="bar"><span class="git"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sections" id="section-projets">
+    <h1 class="reveal-type" id="title-projets">Mes projets</h1>
+    <div id="container-projets">
+      <div class="card">
+        <a target="_blank" href="https://foryoumaquillage.fr/">
+          <img class="card-img" loading="lazy" src="assets/images/SiteForYouMaquillage.webp" alt="capture d'écran du site web foryoumaquillage.fr">
+          <div class="card-content">
+            <div class="card-title-div">
+              <h2 class="card-title">
+                e-commerce
+              </h2>
+            </div>
+            <p class="card-description" id="card-description-foryoumaquillage">
+              Site de vente en ligne réalisé from scratch avec NodeJs / ReactJs / MySQL.
+              <br />
+              Ce site intègre notamment l'API PayPal pour les paiements, des envois d'emails automatiques, un convertisseur d'image, ou encore un backoffice entièrement personnalisé.
+              <br />
+              Il est hébergé sur un serveur web configuré avec Nginx par mes soins.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="card">
+        <a target="_blank" href="https://conceptartzinc.fr/">
+          <img class="card-img" loading="lazy" src="assets/images/SiteConceptArtZinc.webp" alt="capture d'écran du site web Concept Art & Zinc">
+          <div class="card-content">
+            <div class="card-title-div">
+              <h2 class="card-title">
+                site vitrine
+              </h2>
+            </div>
+            <p class="card-description" id="card-description-conceptartzinc">
+              Site vitrine permettant à un artisan de présenter son travail, son catalogue et les moyens de le contacter.
+              <br />
+              Il a été réalisé sous wordpress avec l'objectif d'être facilement maintenu à jours par l'artisan lui-même, afin qu'il puisse rapidement y ajouter ses nouvelles oeuvres.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="card">
+        <a target="_blank" href="#">
+          <img class="card-img" loading="lazy" src="assets/images/space_shooter.webp" alt="image du jeu space shooter">
+          <div class="card-content">
+            <div class="card-title-div">
+              <h2 class="card-title">
+                JEU WEB
+              </h2>
+            </div>
+            <p class="card-description" id="card-description-projet3">
+              Jeu vidéo entièrement développé en HTML / CSS / Javascript (vanilla).
+              <br />
+              <br />
+              Ce projet a été réalisé dans un but de découverte et d'apprentissage.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="section-contact" class="sections" data-bg-image="linear-gradient(95.2deg, rgba(173,252,234,0) 26.8%, rgba(192,229,246,0) 64%)" data-fg-image="linear-gradient(95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64%)" style="background-color: rgba(186, 236, 242, .2)">
+    <div id="container-contact">
+      <h1 class="reveal-type" id="title-contact">Me contacter</h1>
+      <div id="contact-infos-div">
+        <p>Si vous souhaitez me joindre pour discuter de vos projets, n'hésitez pas à remplir le formulaire de contact ci-dessous. Je serais ravis de répondre à toutes vos questions afin de vous aider à réaliser vos objectifs en ligne.</p>
+      </div>
+      <div id="contact-form-container">
+        <form id="contact-form" method="POST" action="sendmail.php">
+          <h3>Formulaire de contact</h3>
+          <div class="form-row" id="form-row-top">
+            <div class="form-col" id="form-info-col">
+              <label class="form-label" for="contact-form-name">Nom :</label>
+              <br />
+              <input id="contact-form-name" class="form-input" type="text" name="name" required>
+              <br />
+              <label class="form-label" for="contact-form-email">Email :</label>
+              <br />
+              <input id="contact-form-email" class="form-input" type="email" name="email" required>
+              <br />
+              <label class="form-label" for="contact-form-phone">Téléphone (facultatif) :</label>
+              <br />
+              <input id="contact-form-phone" class="form-input" type="tel" name="phone">
+              <br />
+              <label class="form-label" for="contact-form-object">Objet :</label>
+              <br />
+              <input id="contact-form-object" class="form-input" type="text" name="object" required>
+              <input id="contact-form-city" class="form-input" type="text" name="city" placeholder="Merci de laisser ce champ vide">
+            </div>
+            <div class="form-col" id="phone-email-col">
+              <span id="email-link" class="social-info">
+                <img class="social-link-img" loading="defer" src="assets/images/mail.svg" alt="My email address">
+                <a href="mailto:lazare.boddaert@gmail.com" target="_blank">lazare.boddaert@gmail.com</a>
+              </span>
+              <span id="phone-link" class="social-info">
+                <img class="social-link-img" loading="defer" src="assets/images/phone.svg" alt="My phone number">
+                <span class="phone-number">06.45.84.67.71</span>
+              </span>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="contact-form-message">Message :</label>
+            <br />
+            <textarea id="contact-form-message" class="form-input" name="message" required maxlength='5000'></textarea>
+          </div>
+          <button id="form-contact-btn" type="submit">Envoyer</button>
+        </form>
+      </div>
+      <div id="phone-email-mobile">
+        <span id="email-link-mobile" class="social-info-mobile">
+          <img class="social-link-img" loading="defer" src="assets/images/mail.svg" alt="My email address">
+          <a href="mailto:lazare.boddaert@gmail.com" target="_blank">lazare.boddaert@gmail.com</a>
+        </span>
+        <span id="phone-link-mobile" class="social-info-mobile">
+          <img class="social-link-img" loading="defer" src="assets/images/phone.svg" alt="My phone number">
+          <span class="phone-number">06.45.84.67.71</span>
+        </span>
+      </div>
+      <p id="contact-more-info">Vous pouvez également me retrouver sur les réseaux sociaux suivants :</p>
+      <div id="social-links-grid-container">
+        <div id="linkedin-link" class="social-link"><a href="https://www.linkedin.com/in/lazare-boddaert" target="_blank"><img class="social-link-img" loading="defer" src="assets/images/linkdin.svg" alt="Link to my Linkedin profile"></a></div>
+        <div id="github-link" class="social-link"><a href="https://github.com/LazareBoddaert" target="_blank"><img class="social-link-img" loading="defer" src="assets/images/github.svg" alt="Link to my Github profile"></a></div>
+        <div id="codewars-link" class="social-link"><a href="https://www.codewars.com/users/LazareBoddaert" target="_blank"><img class="social-link-img" loading="defer" src="assets/images/codewars.svg" alt="Link to my Codewars profile"></a></div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <h4>Lazare Boddaert - Développeur Web Fullstack</h4>
+    <br />
+    <p><span><a href="mailto:lazare.boddaert@gmail.com" target="_blank">lazare.boddaert@gmail.com</a></span><span class="phone-number">06.45.84.67.71</span></p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.28/bundled/lenis.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="app.js"></script>
+</body>
+</html>
