@@ -354,7 +354,8 @@ html.lenis {
   height: min-content;
   margin: 0;
   margin-bottom: 2rem;
-  min-width: 330px;
+  min-width: 290px;
+  max-width: 96%;
 }
 .skills-title-div {
   height: 100%;
@@ -439,17 +440,21 @@ html.lenis {
   width: 60%;
   animation: redux 2s;
 }
-.seo {
-  width: 75%;
-  animation: seo 2s;
-}
 .wordpress {
-  width: 70%;
+  width: 75%;
   animation: wordpress 2s;
+}
+.seo {
+  width: 70%;
+  animation: seo 2s;
 }
 .git {
   width: 65%;
   animation: git 2s;
+}
+.figma {
+  width: 60%;
+  animation: figma 2s;
 }
 @keyframes nodejs {
   0% {
@@ -539,7 +544,7 @@ html.lenis {
     width: 60%;
   }
 }
-@keyframes seo {
+@keyframes wordpress {
   0% {
     width: 0%;
   }
@@ -547,7 +552,7 @@ html.lenis {
     width: 75%;
   }
 }
-@keyframes wordpress {
+@keyframes seo {
   0% {
     width: 0%;
   }
@@ -563,6 +568,14 @@ html.lenis {
     width: 65%;
   }
 }
+@keyframes figma {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
 
 /* ------ LES PROJETS ------ */
 #section-projets {
@@ -570,6 +583,7 @@ html.lenis {
 }
 #title-projets {
   margin: 0 auto;
+  padding-bottom: .4rem;
   padding-top: 2rem;
   width: fit-content;
   color: #033F63;
@@ -586,6 +600,7 @@ html.lenis {
 }
 .card {
   width: 20rem;
+  min-width: 290px;
   height: 20rem;
   border-radius: 10px;
   overflow: hidden;
@@ -630,13 +645,13 @@ html.lenis {
 }
 
 #card-description-foryoumaquillage {
-  inset: auto auto 22px 30px;
+  inset: auto auto 12px 30px;
 }
 #card-description-conceptartzinc {
   inset: auto auto 38px 30px;
 }
-#card-description-projet3 {
-  inset: auto auto 150px 30px;
+#card-description-space-shooter {
+  inset: auto auto 120px 30px;
 }
 
 
@@ -678,7 +693,7 @@ html.lenis {
 
 }
 
-#card-description-projet3 {
+#card-description-space-shooter {
   margin-bottom: -3rem;
 }
 

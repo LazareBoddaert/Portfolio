@@ -66,8 +66,8 @@ titles.forEach((title, i) => {
   gsap.to(title, {
     scrollTrigger: {
       trigger: title,
-      start: "top 80%",
-      end: "top 60%",
+      start: "top 60%",
+      end: "top 50%",
       scrub: true,
       markers: false,
     },
