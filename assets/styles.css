@@ -642,7 +642,7 @@ html.lenis {
 }
 
 #card-description-foryoumaquillage {
-  inset: auto auto 12px 30px;
+  inset: auto auto 16px 30px;
 }
 #card-description-conceptartzinc {
   inset: auto auto 38px 30px;
@@ -683,11 +683,6 @@ html.lenis {
     transition: height .3s ease;
     height: 85%;
   }
-}
-
-@media (hover: none) {
-  /* Targets only devices unable to hover */
-
 }
 
 
