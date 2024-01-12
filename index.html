@@ -218,7 +218,7 @@
         <p>Si vous souhaitez me joindre pour discuter de vos projets, n'hésitez pas à remplir le formulaire de contact ci-dessous. Je serais ravis de répondre à toutes vos questions afin de vous aider à réaliser vos objectifs en ligne.</p>
       </div>
       <div id="contact-form-container">
-        <form id="contact-form" method="POST" action="sendmail.php">
+        <form id="contact-form" method="POST" action="#">
           <h3>Formulaire de contact</h3>
           <div class="form-row" id="form-row-top">
             <div class="form-col" id="form-info-col">
@@ -255,7 +255,10 @@
             <br />
             <textarea id="contact-form-message" class="form-input" name="message" required maxlength='5000'></textarea>
           </div>
-          <button id="form-contact-btn" type="submit">Envoyer</button>
+          <div class="button-area">
+            <button id="form-contact-btn" type="submit">Envoyer</button>
+            <span></span>
+          </div>
         </form>
       </div>
       <div id="phone-email-mobile">

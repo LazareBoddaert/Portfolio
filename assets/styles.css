@@ -805,6 +805,20 @@ html.lenis {
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.37);
 }
 
+form.disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+.button-area {
+  align-self: flex-start;
+}
+.button-area span{
+  color: black;
+  font-size: 17px;
+  margin: 8px 0 0 6px;
+  display: none;
+}
+
 #phone-email-mobile {
   display: flex;
   flex-direction: column;
