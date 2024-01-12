@@ -148,11 +148,10 @@ for (let div of skillDivs) {
 
 
 //Contact Form in PHP
-const form = document.querySelector("form"),
-statusTxt = form.querySelector(".button-area span");
+const form = document.querySelector("form");
+let statusTxt = form.querySelector(".button-area span");
 form.onsubmit = (e)=>{
   e.preventDefault();
-  // statusTxt.style.color = "#0D6EFD";
   statusTxt.style.display = "block";
   statusTxt.innerText = "Envoie du message...";
   form.classList.add("disabled");
