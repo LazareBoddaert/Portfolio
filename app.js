@@ -147,7 +147,7 @@ for (let div of skillDivs) {
 }
 
 
-//Contact Form in PHP
+// Contact Form
 const form = document.querySelector("form");
 let statusTxt = form.querySelector(".button-area span");
 form.onsubmit = (e)=>{

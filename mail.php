@@ -1,4 +1,3 @@
-//Contact Form in PHP
 <?php
   $name = htmlspecialchars($_POST['name']);
   $email = htmlspecialchars($_POST['email']);
@@ -11,7 +10,7 @@
     echo "Action suspecte, êtes-vous vraiment humain ?";
   }elseif(!empty($email) && !empty($message) && !empty($name) && !empty($object)){
     if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-      $receiver = "contact@lazareboddaert.com"; //enter that email address where you want to receive all messages
+      $receiver = "contact@lazareboddaert.com";
       $subject = "$object";
       $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
       $sender = "From: $email";
