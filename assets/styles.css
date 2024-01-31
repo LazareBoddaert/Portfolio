@@ -19,6 +19,9 @@ a {
   text-decoration: none;
   color: white;
 }
+p {
+  line-height: 1.5rem;
+}
 
 @font-face {
   font-family: open-sans-bold;
@@ -639,6 +642,7 @@ html.lenis {
   position: absolute;
   max-width: 80%;
   opacity: 1;
+  line-height: 1.2rem;
 }
 
 #card-description-foryoumaquillage {
@@ -704,10 +708,10 @@ html.lenis {
   text-align: center;
 }
 #contact-infos-div p {
-  width: 100%;
+  width: 90%;
   margin-top: 1rem;
   margin-bottom: .6rem;
-  text-align: left;
+  text-align: justify;
 }
 #contact-form {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, .0));
