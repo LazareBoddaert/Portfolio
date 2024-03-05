@@ -225,6 +225,7 @@ html.lenis {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 500px;
   height: calc(100vh - 52px);
   width: 100vw;
 }
