@@ -10,7 +10,7 @@
     echo "Action suspecte, êtes-vous vraiment humain ?";
   }elseif(!empty($email) && !empty($message) && !empty($name) && !empty($object)){
     if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-      $receiver = "contact@lazareboddaert.com";
+      $receiver = "dev@lazareboddaert.com";
       $subject = "$object";
       $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
       $sender = "From: $email";
