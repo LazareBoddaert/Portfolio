@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  background-image: linear-gradient(95.2deg, rgb(173, 252, 234) 26.8%, rgb(192, 229, 246) 64%);
+  color: #28262C;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  overflow-x: hidden;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hide-scrollbar {
+  overflow-y: hidden;
+}
+.show-scrollbar {
+  overflow-y: visible;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+  line-height: 1.5rem;
+}
+
+@font-face {
+  font-family: open-sans-bold;
+  src: url("fonts/OpenSans-Bold-webfont.woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: open-sans;
+  src: url("fonts/OpenSans-Semibold-webfont.woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: open-sans-bold, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- NAVBAR --- */
+#header {
+  height: 52px;
+  width: 100vw;
+  background-color: #00100B;
+  font-family: open-sans, Tahoma, Geneva, Verdana, sans-serif;
+}
+.my-navbar {
+  align-items: center;
+  background-color: #171717c8;
+  backdrop-filter: blur(4px);
+  display: inline-flex;
+  height: 52px;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0;
+  width: 100%;
+  z-index: 10;
+}
+#navbar-logo {
+  margin-left: .7rem;
+  width: 200px;
+}
+#navbar-logo:hover {
+  cursor: pointer;
+}
+.links-menu {
+  margin-right: 3rem;
+  color: white;
+}
+.links-menu:hover, .active-menu-link {
+  background-color: #d3d3d3;
+  background-image: linear-gradient(315deg, #d3d3d3 0%, #7f8c8d 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+/* --- BODY --- */
+.numbers {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+section {
+  margin-top: 2rem;
+  width: 80%;
+}
+
+h1, h2 {
+  margin-bottom: .6rem;
+  color: rgb(3, 63, 99);
+}
+h6 {
+  font-size: 16px;
+  margin-top: .4rem
+}
