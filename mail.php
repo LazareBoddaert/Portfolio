@@ -13,7 +13,7 @@
       $receiver = "dev@lazareboddaert.com";
       $subject = "$object";
       $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
-      $sender = "From: $email";
+      $sender = "From: dev@lazareboddaert.com";
       if(mail($receiver, $subject, $body, $sender)){
          echo "Message envoyé !";
       }else{
